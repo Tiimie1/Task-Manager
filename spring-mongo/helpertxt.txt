@@ -1,0 +1,6 @@
+spring.data.mongodb.authentication-database=admin
+spring.data.mognodb.username=rootuser
+spring.data.mognodb.password=rootpass
+spring.data.mognodb.database=tiimiedb
+spring.data.mongodb.port=27017
+spring.data.mognodb.host=localhost
