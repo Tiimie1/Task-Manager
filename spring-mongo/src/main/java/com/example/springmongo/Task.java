@@ -4,8 +4,6 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
-
 @Data
 @Document
 public class Task {
@@ -13,7 +11,6 @@ public class Task {
     private String id;
     private String taskName;
     private String taskContent;
-    //private Date dueDate;
     private Importance importance;
 
     public Task(String taskName,

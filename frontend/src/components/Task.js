@@ -12,14 +12,8 @@ import Fab from '@mui/material/Fab';
 import CircleIcon from '@mui/icons-material/Circle';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
-import PropTypes from 'prop-types';
-
-
-
 
 export default function Task() {
 
@@ -105,7 +99,6 @@ export default function Task() {
 
   return (
     <Container sx={{
-      //backgroundColor:"blue"
     }}>
       <Grid container spacing={4} justify="center"
       sx={{
@@ -160,11 +153,7 @@ export default function Task() {
                 <AddIcon sx={{ mr: 1 }} />
                   Add task
               </Fab>
-
-
-
           </Paper>
-        
           <Paper elevation={0} 
           sx={{
             marginTop: 5,
@@ -183,7 +172,7 @@ export default function Task() {
                         {taskName}
                       </Typography>
                     </CardContent>
-                    <CardContent sx={{display: "inline-block", marginLeft:"auto", alignSelf: "center"}}>
+                    <CardContent sx={{display: "inline-flex", marginLeft:"auto", alignSelf: "center"}}>
                       <Button onClick={()=>handleClickOpen(taskContent)}>
                         <MoreVertIcon color="secondary"/>
                       </Button>

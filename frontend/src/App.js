@@ -1,6 +1,5 @@
 
 import './App.css';
-import ButtonAppBar from './components/Appbar';
 import Task from './components/Task';
 
 function App() {

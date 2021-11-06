@@ -18,8 +18,6 @@ public class SpringMongoApplication {
 		SpringApplication.run(SpringMongoApplication.class, args);
 	}
 
-	//SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
-
 	@Bean
 	CommandLineRunner runner(
 			TaskRepository repository,
@@ -30,14 +28,6 @@ public class SpringMongoApplication {
 					"number 3",
 					Importance.HIGH
 			);
-			//Query query = new Query();
-			//query.addCriteria(Criteria.where("taskName").is("Spring Boot course"));
-
-			//List<Task> tasks = mongoTemplate.find(query, Task.class);
-			//repository.insert(task);
-			//repository.findTaskByTaskName("Spring Boot course").ifPresent(s -> {
-				//System.out.println(s);
-			//});
 		};
 	}
 }
